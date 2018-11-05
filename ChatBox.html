@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChatBox</title>
+	<style type="text/css">
+header{
+			width: 100%;
+			height:80px;
+			background: #130f40;
+}
+#header_img{
+	width: 60px;
+	 height:60px;
+	 padding-left:  15px;
+	 padding-top: 10px;
+	 float: left;
+}
+.twist{	
+	padding-top: 15px;
+ font-size: 40px;
+color: #c7ecee;
+}
+body{
+	padding:0px;
+	background: #c7ecee;
+}
+#verDiv{
+	margin-top: 5px;
+	background: #7ed6df;
+	border: 1px solid grey;
+	width: 20%;
+	height: 500px;
+	float: left;
+}
+#list{
+	padding-left: 10px;
+	padding-top: 5px;
+    padding-bottom: 10px;
+	list-style-type: none; 
+	font-size: 25px;
+	padding-bottom: 60px;
+}
+li:hover{
+	background: #22a6b3;
+}
+#friend{
+	border-radius: 50%;
+	width: 60px;
+	height:60px;
+}
+#profile{
+margin-top: 0px;
+border-radius: 50%;
+	width: 120px;
+	height:120px;	
+}
+#userbox1{
+	background: white;
+	border: 2px solid grey;
+	height: 230px;
+	width: 200px;
+	float: right;
+	margin-top: 41px;
+	margin-right: 50px;
+}
+#userbox2{
+	background: white;
+	border: 2px solid grey;
+	height: 230px;
+	width: 200px;
+	float: right;
+	margin-top: 41px;
+	margin-right: 30px;
+}
+#box1-head{
+	width:200px;
+	background: #130f40;
+	color: #c7ecee;
+	font-size: 18px;
+	text-align: left;
+}
+#box2-head{
+	width:200px;
+	background: #130f40;
+	color: #c7ecee;
+	font-size: 18px;
+	text-align: left;
+}
+.online_img{
+	width:10px;
+	height: 10px;
+	float: left;
+	padding: 5px;
+}
+.close_img{
+width:10px;
+	height: 10px;
+	float: right;
+	padding: 5px;	
+}
+input{
+	margin-top: 65px;
+	height: 25px;
+	width: 150px;
+	display: grid;
+	float:left;
+
+}
+.send{
+	margin-top: 60px;
+	margin-right: 5px;
+	width: 40px;
+	height: 40px;
+	float:right;
+}
+.sender{
+margin-top: 5px;
+margin-bottom: 0px;
+background: #f6e58d;
+height: 25px;
+font-size: 18px;
+}
+.receiver{
+background: #badc58;
+margin-top: 5px;
+height: 25px;
+font-size: 18px;
+margin-bottom: 0px;
+}
+.notification{
+	margin-top: 0px;
+	float: right;
+	color: grey;
+}
+#Add_Friend{
+     float: right;
+     margin-right: 5px;
+
+     height: 40px;
+     width: 120px;
+     font-size: 18px;
+     font-weight: bold;
+}
+#View_Activity{
+     float: right;
+     margin-right: 5px;
+     height: 40px;
+     width: 130px;
+     font-size: 18px;
+     font-weight: bold;
+}
+footer{
+	width: 100%;
+	height: 40px;
+	background: #130f40;
+	color: #c7ecee;
+    margin-top: 290px;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+	</style>
+</head>
+<body>
+<header>
+<img id = "header_img" src = "http://icons.iconarchive.com/icons/webalys/kameleon.pics/256/Chat-2-icon.png">
+<p class = "twist">Twist Chat</p>
+</header>
+
+             <div id="verDiv">
+	           <ul id = "list">
+	           	<li>
+	           	<img id = "friend" src="https://i1.wp.com/tricksmaze.com/wp-content/uploads/2017/10/Stylish-Girls-Profile-Pictures-11.jpg?resize=466%2C466&ssl=1"> Simra Jamshed
+	           	</li>
+	           	
+	            <li>
+	           			<img id = "friend" src="https://1.bp.blogspot.com/-5wHBy04BdFc/WV9XyZRBFhI/AAAAAAAAA-o/2SBIEFW1k7Mp0JAXC1agbmopqRaJDPsqQCLcBGAs/s1600/whatsappmasala%2B%25281%2529.jpg">
+	           		Zara Khan
+	           	</li>
+	           </ul>
+         </div>
+	        <p style="margin-left: 290px; font-size: 35px; font-weight: bold; margin-top: 5px">
+          <img id  = "profile" src="https://i2.wp.com/tricksmaze.com/wp-content/uploads/2017/04/Stylish-Girls-Profile-Pictures-42.jpg?resize=629%2C629&ssl=1">
+      	Sidra Khanzada</p>
+      		<p style="margin-left: 290px; color: grey;"> Student of Software Engineering<br>Studied in MUET jamshoro<br> Lives in Nawabshah</p>
+      		
+      		<button id  = "View_Activity">View Activity</button>
+      		<button id = "Add_Friend">Add friend</button>
+	     
+
+	     <div id = "userbox1">
+	        <div id="box1-head">
+        <img class="online_img" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Green_sphere.svg/1024px-Green_sphere.svg.png">
+	     Simra Jamshed
+         <img class="close_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Grey_close_x.svg/1024px-Grey_close_x.svg.png">
+	 </div>
+	     <p class = "sender">As sllam alai kum..</p>
+	     <p class = "notification">sent..</p><br>
+	     <p class = "receiver">Hello Api &#x1F603</p>
+	     	<p class = "notification">received..</p>	
+	     	<input type="text" name="msg1" placeholder="Enter your msg">
+	     	<img class="send"src="http://www.surt.org/wp-content/uploads/2018/07/captura2.png">
+	     </div>
+	
+	     <div id = "userbox2">
+	     	<div id="box1-head">
+            <img class="online_img" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Green_sphere.svg/1024px-Green_sphere.svg.png">
+	     	Zara Khan
+            <img class="close_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Grey_close_x.svg/1024px-Grey_close_x.svg.png">
+	     </div>
+	     	<p class = "sender">As sllam alai kum..</p>
+	     	<p class = "notification">sent..</p><br>
+	     	<p class = "receiver">Wlai km slm Sidra &#x1F642</p>
+	     	<p class = "notification">received..</p>
+	     
+	     	      <input type="text" name="msg2" placeholder="Enter your msg">
+	     	      <img class="send"src="http://www.surt.org/wp-content/uploads/2018/07/captura2.png">	          
+	         </div>
+
+<footer>
+	Copyright @ all rights reserved 2018
+</footer>
+</body>
+</html>

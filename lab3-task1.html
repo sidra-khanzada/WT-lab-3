@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Text Style</title>
+</head>
+<style type="text/css">
+
+	#div_body{
+		background-color: #222f3e;
+		height: 100px;
+		color: #1dd1a1;
+		font-weight: bolder;
+		font-size: 50px;
+		text-align: center;
+		padding-top: 20px;
+		left: 0px;
+		margin-top: 0;
+	}
+	
+ #navlist{
+         
+		list-style-type: none;
+		padding: 0;
+		position: absolute;
+		/*left:0;*/
+		margin-left: 10px;
+		text-align: left;
+		padding-left: 10px;
+        font-size: 30px;
+      
+	}
+li:hover{
+width: 220px;	
+/* background: #ff6b6b;*/
+ background: #2d3436;
+}
+
+main{
+	display: inline;	
+}
+
+#maincontainer{
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+}
+
+.container{
+
+	background: #ff6b6b; 
+	display: list-item;
+	margin: 0;
+	float:center;
+}
+
+.container .btn {
+    position: absolute;
+   /* border-radius: 62px;*/
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #c23616;
+    color: #fbc531;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.btn a{
+  color: #fbc531;
+ /* href: https://www.mcdelivery.com.pk/pk/browse/menu.html;*/
+
+}
+.container .btn:hover {
+    background-color: #353b48;
+}
+
+.sidebar{
+	float: right;
+	background: #ff6b6b; 
+	width: 200px; 
+	height: 470px; 
+}
+/*Here I am adding something*/
+.sidenav{
+		 position: fixed;
+		background: #c0392b;
+		color:#F1C40F;
+		font-size: 12px;
+		font-weight: bolder;
+		height: 100%;
+		  width: 0;
+	   text-align: center;
+	  float: left;
+    z-index: 1;
+    top: 200;
+    left: 0; 
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+	}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+img{
+	transition: width 2s, height 3s;
+}
+img:hover{
+	width: 470px;
+    height: 310px;
+
+}
+
+
+</style>
+<body>
+	<div style="margin: 0">
+<div id = "div_body">
+	CSS Text Style
+</div>
+<main id="maincontainer">
+
+<nav id = "mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<ul id="navlist" >
+	<li style="margin-bottom: 12px; border-bottom: 1px solid grey;">
+		Option1
+	</li>
+	<li style="margin-bottom: 12px;border-bottom: 1px solid white;">
+		Option2
+	</li>
+	<li style="margin-bottom: 12px; border-bottom: 1px solid white;">
+		Option3
+	</li>
+	<li style="margin-bottom: 12px; border-bottom: 1px solid white;">
+		Option4
+	</li>
+	<li style="margin-bottom: 12px;border-bottom: 1px solid white;">
+		Option5
+	</li>
+</ul>
+	</nav>
+
+<!--Here i am adding script-->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+    document.body.style.backgroundColor = "	rgb(255, 107, 107)";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    // document.body.style.backgroundColor = "pink";
+       document.body.style.backgroundColor = "#ff6b6b";
+}
+</script>
+<!--Ending script-->
+
+
+	<div class= "container">
+         <img src="https://www.godairyfree.org/wp-content/uploads/2006/05/fast-food-mcdonalds-nuggets.jpg" width="449px" height="300px" >
+         <img src="https://d2z1w4aiblvrwu.cloudfront.net/ad/wQWB/mcdonalds-2-for-4-breakfast-sandwiches-mix-and-match-large-1.jpg" width="440px" height="300px">
+          <img src="https://i.ytimg.com/vi/FaRGi-pXNko/maxresdefault.jpg" width="450px" height="300px">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxSh6OQme1x5yKDEbLieQAyfZzrTTwIzZNoEUAM9gjSYoSxlz-" width="440px" height="300px">
+         <button class = "btn" id = "1" style="top: 60%;
+    left: 30%;  border-radius: 62px; ">  <a href="https://www.mcdelivery.com.pk/pk/browse/menu.html" >Click here to learn more about deals</a></button>
+          <button class = "btn" id = "2" style="top: 60%;
+    left: 65%;  border-radius: 62px;"> <a href="https://www.mcdelivery.com.pk/pk/browse/menu.html" > Click here to learn more about deals </a> </button>
+           <button class = "btn" id = "3" style="top: 105%;
+    left: 30%;  border-radius: 62px;">Click here to learn more about deals</button>
+            <button class = "btn" id = "4" style="top: 105%;
+    left: 65%;  border-radius: 62px;">Click here to learn more about deals</button>
+	</div>
+	<aside class="sidebar" >
+		<img src="http://s1.thingpic.com/images/ie/QPZ8LGFucP7DRb7adahmeJsY.png" width="100%" height="130%">
+	</aside>
+</main>
+</div>
+</body>
+</html>
